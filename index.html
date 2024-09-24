@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de input</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Reproductor/styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="avisos" id="avisos">
+            <div class="msg" id="msg1">
+                <span id="txt"></span>
+                <br><br><br>
+                <div>
+                    <button id="ok" class="iniciar" onclick="desaparecer()">Cerrar</button>
+                    <button class="iniciar" onclick="iniciar()">Volver a Jugar</button>
+                </div>
+            </div>
+
+            <div class="msg2" id="msg2">
+                <span id="txt2"></span>
+            </div>
+                
+        </div>
+
+        <!-- <img style="border-radius: 10px;" src="https://mir-s3-cdn-cf.behance.net/projects/404/05c1e8173805207.Y3JvcCw1MzI4LDQxNjgsMjUwLDA.jpg" alt="" width="200px" height="200px"> -->
+
+        <div class="header">
+            <div class="logo">
+
+            </div>
+            <div class="muestra">
+                <div class="contador" id="mcont">
+                    <div>
+                        <div id="counter" style="color: white;">00:00:00</div>
+                    </div>
+                    <div class="interruptor">
+                        <input type="range" value="100" id="progress">
+                    </div>
+                    
+                    
+                </div>
+            </div>
+    
+            <div class="musica">
+                <!-- <div class="player">
+                    <audio id="audioPlayer" autoplay></audio>
+                    <div class="progress-container">
+                        <span id="currentTime">0:00</span>
+                        <input type="range" id="progressBar" value="0" max="100">
+                        <span id="duration">0:00</span>
+                    </div>
+                    <div class="controls">
+                        <button id="prevBtn">&#9664;&#9664;</button>
+                        <button id="playPauseBtn">&#9654;</button>
+                        <button id="nextBtn">&#9654;&#9654;</button>
+                    </div>
+                </div> -->
+            </div>
+    
+           
+        </div>
+        
+        
+        <div class="juego">
+            <div class="botones">
+           
+                <div class="mensajes" id="mensajes">
+                    <h2 style="color: white;">KeyPress</h2>
+                    <button class="iniciar" id="play" onclick="iniciar()">Iniciar</button>
+                </div>
+                
+                <div class="punteros" id="punteros">
+                    
+                    <div id="nt1" class="points"></div>
+                    <div id="nt2" class="points"></div>
+                    <div id="nt3" class="points"></div>
+                    <div id="nt4" class="points"></div>
+                </div>
+                <div class="inp" id="botones">
+                    <div id="btn1" class="btn-number">D</div>
+                    <div id="btn2" class="btn-number">F</div>
+                    <div id="btn3" class="btn-number">J</div>
+                    <div id="btn4" class="btn-number">K</div>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        <div>
+        </div>
+
+        <div class="footer">
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="Reproductor/script.js"></script>
+</body>
+</html>
